@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+
+  
+  header{
+      background: black;
+      border: 300px;
+      margin: 0%;
+      height: 100%;   
+  }
+
+    /*espacio barra nav*/
+
+  .navbar-nav > li{
+    padding-left:3px;
+    padding-right:3px;
+  }
+  
+/*espacio barra nav*/
+    
+  h3{
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      text-transform: capitalize;
+  
+  }
+
+   /*desarrollo formulario de contacto*/
+
+   body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 2em;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid pink;
+}
+
+.contact-form form button {
+    background: pink;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: black;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+   
+
+
+   /*desarrollo formulario de contacto*/
+  
+  
+    /*desarrollo galeria de tendencias*/
+
+  .Galeria{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    padding: 15px;
+    grid-gap: 10px;
+}
+
+.item{
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    background-position: center;
+}
+
+.item:hover{
+    transform: scale(1.5);
+    transition: all 0.8s;
+}
+
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(../multimedia/moda6.jpg);
+    background-size: cover;
+}
+
+.item2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../multimedia/textil1.jpg);
+    background-size: cover;
+}
+
+.item3{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-image: url(../multimedia/tipos-de-moda.jpg);
+    background-size: cover;
+}
+
+.item4{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-image: url(../multimedia/moda9.jpg);
+    background-size: cover;
+
+}
+
+.item5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(../multimedia/textil2.jpg);
+    background-size: cover;
+}
+
+.item6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url(../multimedia/moda2.jpg);
+    background-size: cover;
+
+}
+
+.item7{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../multimedia/accesorio1.jpg);
+    background-size: cover;
+}
+
+.item8{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-image: url(../multimedia/nosotros.jpg);
+    background-size: cover;
+}
+
+@media only screen and (min-width: 320px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*desarrollo galeria de tendencias*/
+
+/*agregado transformaciones CSS Polaroid*/
+
+ .polaroid-gallery{
+    text-align: center;
+}
+
+.polaroid-gallery__title{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 48px;
+    transition: all 0.3s;
+}
+
+.polaroid-card{
+    display: inline-block;
+    margin: 32px;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.polaroid-card img{
+    object-fit: cover;
+}
+ 
+.polaroid-card figcaption{
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.polaroid-card:nth-of-type(even){
+  transform:rotate(12deg);  
+}
+
+.polaroid-card:nth-of-type(odd){
+  transform:rotate(-12deg);  
+} 
+
+.polaroid-card:nth-of-type(odd){
+  transform:rotate(-12deg);  
+} 
+
+
+.polaroid-card:nth-of-type(odd): ::before{
+  content: '';
+  display: block;
+  background-color: rgba(222, 220, 200, 0.86);
+  width: 100px;
+  height: 25px;
+  transform: translate(-30px,-25px) rotate(-24deg);
+}
+
+.polaroid-card:hover{
+   transform: scale(1.25);
+
+}
+
+.polaroid-gallery__title{
+    text-align: center;
+    font-size: 25px;
+}
+
+/*agregado transformaciones CSS Polaroid*/
+
+
+  
+  .form-login {
+      width: 400px;
+      height: 340px;
+      background:#424242;
+      margin: auto;
+      margin-top: 90px;
+      margin-bottom: 90px;
+      box-shadow: 7px 13px 37px #000;
+      padding: 20px 30px;
+      border-top: 4px solid #000;
+      color: white;
+  
+  }
+  
+  .form-login h1{
+      margin: 0;
+      text-align: center;
+      font-size: 20px;
+      height: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .controls{
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 5px 5px;
+      background: #252323;
+      font-size: 14px;
+      font-weight: bold;
+  
+  }
+  
+  .buttons{
+      width: 100%;
+      height: 40px;
+      background: #252323 ;
+      border: none;
+      color: white;
+      margin-bottom: 16px;
+  }
+  
+  .form-login p{
+      height: 40px;
+      text-align: center;
+      border-bottom: 1px solid;
+  
+  }
+  
+  .form-login a{
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+  }
+  
+  .form-login a:hover{
+      text-decoration: underline;
+  }
+  
+  body{
+      background:;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      margin: 0px;
+      padding:0;
+      background-image: url(../multimedia/zarafondof.jpg);
+      background-size: cover;
+      background-position: center;  
+      border: 0%;
+      display: grid;
+  
+  }
+  
+  .container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .cards{
+      width: 300px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 15px;
+  
+  
+  }
+  
+  .card-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  
+  .card-footer button{
+      width: 150px;
+      background: black;
+      color: white;
+      border-radius: 15px;
+      border: 2px solid black;
+      padding: 6px;
+      font-size: 17px;
+      cursor: pointer;
+      margin-bottom: 10px;
+  
+  }
+  
+  .card-footer button:hover{
+      background-color: white;
+      color: black;
+      border: 2px solid;
+  
+         
+  }
+  
+  
+  .card-img img{
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+  }
+  
+  .card-body h3{
+      text-align: center;
+  }
+  
+  .card-body p{
+      text-align: justify;
+       margin-bottom: 10px;
+       padding: 5px;
+  }
+  
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+  }
+   
+  h2{
+      background-color: black;
+      margin: 0%;
+  }
+  
+  h3{
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  p{
+      line-height: 20px;
+      color: #424242;
+  }
+  footer{
+       background: pink;
+   }
+  
+   body{
+       color: black;
+   }
+  
+   #titulo{
+       color: #424242;
+   }
+  
+   .titulo{
+       color: #424242;
+   }
+  
+   .parrafo{
+       width: 100%;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 25px;
+       color: ;   
+   }
+  
+   /* desarrollo de botones nav*/
+  
+   .btn{
+    font-family:'Times New Roman', Times, serif
+    font-size: 30px;
+    background: #424242;
+    color:white;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;   
+
+ }
+
+ .btn:hover{
+    background: white;
+    color: black
+
+}
+
+
+ul{
+    float: right;
+}
+
+
+ul li{
+    display:inline-block;
+
+}
+
+nav ul li a{
+    background: #424242;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;  
+   
+}
+
+nav ul li a:hover{
+    color:black
+}
+  
+  /*fin desarrollo de botones nav*/
+  section{
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  footer{
+      background: #424242;
+      min-height: 100px;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      text-transform: capitalize;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+      
+  }
+  
+  footer i{
+      font-size: 35px;
+      color: black;
+      letter-spacing: 15px;
+      margin-bottom: 20px;
+  }
+  
+  .card{
+      width:48%;
+      margin: 1%;
+      float:left;
+  }
+  
+  .encabezado{
+      height: 60px;
+      width: 100%;
+      background-color: black;
+      margin: 0%;
+  }
+  
+  .model{
+      height: 200px;
+      width: 400%;
+      background-color: black;
+  }
+  
+  main{
+      background-image: url(multimedia/zarafondo.jpg);
+      height: 100vh;
+      width: 100%;
+  }
+  
